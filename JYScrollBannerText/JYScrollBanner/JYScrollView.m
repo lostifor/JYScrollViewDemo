@@ -22,6 +22,7 @@
 @property (nonatomic, assign) CGRect rightFrame;
 @property (nonatomic, strong) NSTimer* timer;
 @property (nonatomic,   copy) void(^tap)(NSInteger index);
+@property (nonatomic,   copy) void(^setPageControl)();
 
 @end
 
@@ -61,6 +62,17 @@
 
 - (void)bannerWithArray:(NSArray *)array titleArr:(NSArray *)titleArr imageType:(JYImageType)type placeHolder:(NSString *)placeHolder tapAction:(void(^)(NSInteger index))sel {
     NSMutableArray * tempArray = [NSMutableArray array];
+    
+    
+    if (titleArr.count) {
+        __weak __typeof(&*self)weakSelf = self;
+        _setPageControl = ^() {
+            CGPoint center = weakSelf.pageControl.center;
+            center.x = [UIScreen mainScreen].bounds.size.width * 0.9;
+            weakSelf.pageControl.center = center;
+        };
+    }
+    
     for (int i = 0; i < array.count; i ++) {
         JYScrollItemModel * model = [[JYScrollItemModel alloc] init];
         id obj = array[i];
@@ -171,6 +183,10 @@
     CGPoint center = self.pageControl.center;
     center.x = [UIScreen mainScreen].bounds.size.width * 0.5;
     self.pageControl.center = center;
+    if (_setPageControl) {
+        _setPageControl();
+    }
+    
     
     if (count > 0)
     {
