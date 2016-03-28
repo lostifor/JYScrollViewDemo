@@ -28,7 +28,7 @@
 
 - (void)initBanner {
     /**
-     *  假数据
+     *  simulation data
      */
     // photo URLs array
     NSArray * array = @[@"http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1212/27/c0/16922592_1356570394404.jpg",@"http://p9.qhimg.com/t01665b2df63f2dc61b.jpg",@"http://b.hiphotos.baidu.com/zhidao/pic/item/d833c895d143ad4b18e853b981025aafa50f0680.jpg"];
@@ -55,12 +55,19 @@
     /**
      加载演示类型1  图
      */
-    
     _jy2ScrollView = [[JYScrollView alloc] initWithFrame:CGRectMake(0, 350, [UIScreen mainScreen].bounds.size.width, 230)];
     [_jy2ScrollView bannerWithArray:array imageType:JYImageURLType placeHolder:nil tapAction:^(NSInteger index) {
         NSLog(@"22222click   NO.%ld",index);
     }];
     [self.view addSubview:_jy2ScrollView];
+    
+    /**
+     *  or you can set the pageControl
+     *
+        CGPoint center =_jy2ScrollView.pageControl.center;
+        center.x = 350;
+        _jy2ScrollView.pageControl.center = center;
+     */
     
 }
 

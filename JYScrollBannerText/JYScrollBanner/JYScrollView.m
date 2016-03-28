@@ -63,7 +63,6 @@
 - (void)bannerWithArray:(NSArray *)array titleArr:(NSArray *)titleArr imageType:(JYImageType)type placeHolder:(NSString *)placeHolder tapAction:(void(^)(NSInteger index))sel {
     NSMutableArray * tempArray = [NSMutableArray array];
     
-    
     if (titleArr.count) {
         __weak __typeof(&*self)weakSelf = self;
         _setPageControl = ^() {
