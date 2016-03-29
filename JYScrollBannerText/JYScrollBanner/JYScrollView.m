@@ -214,8 +214,25 @@
     {
         return;
     }
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(scrollPage) userInfo:nil repeats:YES];
+//    double timeInterval = 10.0;
+//    if (self.timeInterval > 0) {
+//        timeInterval = self.timeInterval;
+//    }
+    double timeInterval = self.timeInterval;
+    if (!(timeInterval > 0)) {
+        timeInterval = 10.0;
+    }
+    NSLog(@"%f",timeInterval);
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:timeInterval target:self selector:@selector(scrollPage) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+}
+
+- (void)setTimeInterval:(double)timeInterval {
+    _timeInterval = timeInterval;
+    [self endTimer];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:timeInterval target:self selector:@selector(scrollPage) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+    [self setNeedsDisplay];
 }
 
 - (void)endTimer

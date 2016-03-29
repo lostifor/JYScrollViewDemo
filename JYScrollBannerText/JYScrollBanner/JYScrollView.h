@@ -28,6 +28,8 @@ typedef NS_ENUM(NSInteger, JYImageType) {
 //占位图
 //@property (nonatomic, strong) NSString * placeHolder;
 
+//时间间隔
+@property (nonatomic, assign) double timeInterval;
 
 //stop timer
 - (void)stop;

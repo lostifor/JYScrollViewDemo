@@ -48,6 +48,7 @@
     [_jyScrollView bannerWithArray:array titleArr:titleArr imageType:JYImageURLType placeHolder:@"placeholderImage.jpg" tapAction:^(NSInteger index) {
         NSLog(@"11111click   NO.%ld",index);
     }];
+    _jyScrollView.timeInterval = 1;
     [self.view addSubview:_jyScrollView];
     
     
@@ -59,6 +60,7 @@
     [_jy2ScrollView bannerWithArray:array imageType:JYImageURLType placeHolder:nil tapAction:^(NSInteger index) {
         NSLog(@"22222click   NO.%ld",index);
     }];
+    _jy2ScrollView.timeInterval = 2;
     [self.view addSubview:_jy2ScrollView];
     
     /**
