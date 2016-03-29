@@ -1,18 +1,18 @@
 //
-//  JYScrollBannerTextUITests.m
-//  JYScrollBannerTextUITests
+//  JYScrollViewDemoUITests.m
+//  JYScrollViewDemoUITests
 //
-//  Created by 李佳育 on 16/3/24.
+//  Created by 李佳育 on 16/3/29.
 //  Copyright © 2016年 李佳育. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface JYScrollBannerTextUITests : XCTestCase
+@interface JYScrollViewDemoUITests : XCTestCase
 
 @end
 
-@implementation JYScrollBannerTextUITests
+@implementation JYScrollViewDemoUITests
 
 - (void)setUp {
     [super setUp];

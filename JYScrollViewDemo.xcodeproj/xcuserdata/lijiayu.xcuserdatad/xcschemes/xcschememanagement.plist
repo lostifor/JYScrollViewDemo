@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>JYScrollBannerText.xcscheme</key>
+		<key>JYScrollViewDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1FC81A781CA3CDC800F1E82C</key>
+		<key>1FAD67E31CAA79CB00CF4814</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1FC81A911CA3CDC800F1E82C</key>
+		<key>1FAD67FC1CAA79CB00CF4814</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1FC81A9C1CA3CDC800F1E82C</key>
+		<key>1FAD68071CAA79CB00CF4814</key>
 		<dict>
 			<key>primary</key>
 			<true/>

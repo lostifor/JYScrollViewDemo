@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1FC81A781CA3CDC800F1E82C"
-               BuildableName = "JYScrollBannerText.app"
-               BlueprintName = "JYScrollBannerText"
-               ReferencedContainer = "container:JYScrollBannerText.xcodeproj">
+               BlueprintIdentifier = "1FAD67E31CAA79CB00CF4814"
+               BuildableName = "JYScrollViewDemo.app"
+               BlueprintName = "JYScrollViewDemo"
+               ReferencedContainer = "container:JYScrollViewDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1FC81A911CA3CDC800F1E82C"
-               BuildableName = "JYScrollBannerTextTests.xctest"
-               BlueprintName = "JYScrollBannerTextTests"
-               ReferencedContainer = "container:JYScrollBannerText.xcodeproj">
+               BlueprintIdentifier = "1FAD67FC1CAA79CB00CF4814"
+               BuildableName = "JYScrollViewDemoTests.xctest"
+               BlueprintName = "JYScrollViewDemoTests"
+               ReferencedContainer = "container:JYScrollViewDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1FC81A9C1CA3CDC800F1E82C"
-               BuildableName = "JYScrollBannerTextUITests.xctest"
-               BlueprintName = "JYScrollBannerTextUITests"
-               ReferencedContainer = "container:JYScrollBannerText.xcodeproj">
+               BlueprintIdentifier = "1FAD68071CAA79CB00CF4814"
+               BuildableName = "JYScrollViewDemoUITests.xctest"
+               BlueprintName = "JYScrollViewDemoUITests"
+               ReferencedContainer = "container:JYScrollViewDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FC81A781CA3CDC800F1E82C"
-            BuildableName = "JYScrollBannerText.app"
-            BlueprintName = "JYScrollBannerText"
-            ReferencedContainer = "container:JYScrollBannerText.xcodeproj">
+            BlueprintIdentifier = "1FAD67E31CAA79CB00CF4814"
+            BuildableName = "JYScrollViewDemo.app"
+            BlueprintName = "JYScrollViewDemo"
+            ReferencedContainer = "container:JYScrollViewDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FC81A781CA3CDC800F1E82C"
-            BuildableName = "JYScrollBannerText.app"
-            BlueprintName = "JYScrollBannerText"
-            ReferencedContainer = "container:JYScrollBannerText.xcodeproj">
+            BlueprintIdentifier = "1FAD67E31CAA79CB00CF4814"
+            BuildableName = "JYScrollViewDemo.app"
+            BlueprintName = "JYScrollViewDemo"
+            ReferencedContainer = "container:JYScrollViewDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FC81A781CA3CDC800F1E82C"
-            BuildableName = "JYScrollBannerText.app"
-            BlueprintName = "JYScrollBannerText"
-            ReferencedContainer = "container:JYScrollBannerText.xcodeproj">
+            BlueprintIdentifier = "1FAD67E31CAA79CB00CF4814"
+            BuildableName = "JYScrollViewDemo.app"
+            BlueprintName = "JYScrollViewDemo"
+            ReferencedContainer = "container:JYScrollViewDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

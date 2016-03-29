@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  JYScrollBannerText
+//  JYScrollViewDemo
 //
-//  Created by 李佳育 on 16/3/24.
+//  Created by 李佳育 on 16/3/29.
 //  Copyright © 2016年 李佳育. All rights reserved.
 //
 
@@ -10,22 +10,18 @@
 #import "JYScrollView.h"
 
 @interface ViewController ()
-
 @property (nonatomic, strong) JYScrollView * jyScrollView;
 @property (nonatomic, strong) JYScrollView * jy2ScrollView;
-
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
+    // Do any additional setup after loading the view, typically from a nib.
     [self initBanner];
-    
 }
-
 - (void)initBanner {
     /**
      *  simulation data
@@ -66,9 +62,9 @@
     /**
      *  or you can set the pageControl
      *
-        CGPoint center =_jy2ScrollView.pageControl.center;
-        center.x = 350;
-        _jy2ScrollView.pageControl.center = center;
+     CGPoint center =_jy2ScrollView.pageControl.center;
+     center.x = 350;
+     _jy2ScrollView.pageControl.center = center;
      */
     
 }
