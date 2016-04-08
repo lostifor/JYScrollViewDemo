@@ -222,7 +222,7 @@
     if (!(timeInterval > 0)) {
         timeInterval = 10.0;
     }
-    NSLog(@"%f",timeInterval);
+//    NSLog(@"%f",timeInterval);
     self.timer = [NSTimer scheduledTimerWithTimeInterval:timeInterval target:self selector:@selector(scrollPage) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
