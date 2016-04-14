@@ -6,6 +6,10 @@
 //  Copyright © 2016年 李佳育. All rights reserved.
 //
 
+#define kScreenHeigth [[UIScreen mainScreen] bounds].size.height
+#define kScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define Fit375(num) ((num)*kScreenWidth/375.00)
+
 #import "ViewController.h"
 #import "JYScrollView.h"
 
@@ -36,11 +40,12 @@
     /**
      set UI frame,JYScrollview's pageControl is depend on the screen's width,if you want to make a different one you could click JYScrollView.m to change the size or something.
      */
-    _jyScrollView = [[JYScrollView alloc] initWithFrame:CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, 230)];
+    _jyScrollView = [[JYScrollView alloc] initWithFrame:CGRectMake(0, Fit375(50), kScreenWidth, Fit375(230))];
     /**
      *  the array's count must equals to the titleArr's
      *  loadScrollViewData
      */
+    
     [_jyScrollView bannerWithArray:array titleArr:titleArr imageType:JYImageURLType placeHolder:@"placeholderImage.jpg" tapAction:^(NSInteger index) {
         NSLog(@"11111click   NO.%ld",index);
     }];
@@ -52,8 +57,8 @@
     /**
      加载演示类型1  图
      */
-    _jy2ScrollView = [[JYScrollView alloc] initWithFrame:CGRectMake(0, 350, [UIScreen mainScreen].bounds.size.width, 230)];
-    [_jy2ScrollView bannerWithArray:array imageType:JYImageURLType placeHolder:nil tapAction:^(NSInteger index) {
+    _jy2ScrollView = [[JYScrollView alloc] initWithFrame:CGRectMake(0, Fit375(350), kScreenWidth, Fit375(230))];
+    [_jy2ScrollView bannerWithArray:array imageType:JYImageURLType placeHolder:@"placeholderImage.jpg" tapAction:^(NSInteger index) {
         NSLog(@"22222click   NO.%ld",index);
     }];
     _jy2ScrollView.timeInterval = 2;
