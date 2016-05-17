@@ -214,7 +214,8 @@
     {
         return;
     }
-    [self.timer fire];
+    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+//    [self.timer fire];
 }
 
 - (void)setTimeInterval:(double)timeInterval {
