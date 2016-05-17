@@ -220,7 +220,8 @@
 - (void)setTimeInterval:(double)timeInterval {
     _timeInterval = timeInterval;
     [self endTimer];
-    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+    [self startTimer];
+//    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 //    [self setNeedsDisplay];
 }
 
