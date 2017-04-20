@@ -10,3 +10,6 @@
 - 5 block回调中的参数index即为当前页（pagecontroller.currentpage）
 
 ####演示图
+![轮播上.gif](http://upload-images.jianshu.io/upload_images/1043061-a7236993fadbbc99.gif?imageMogr2/auto-orient/strip)
+
+![轮播下.gif](http://upload-images.jianshu.io/upload_images/1043061-231cda59d2a0dca7.gif?imageMogr2/auto-orient/strip)
